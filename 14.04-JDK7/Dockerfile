@@ -9,3 +9,8 @@ RUN apt-get update && \
     add-apt-repository ppa:webupd8team/java && \
     apt-get update && \
     apt-get install -y --no-install-recommends oracle-java7-installer=7u76+7u60arm-0~webupd8~0
+RUN apt-get install -qq -y \
+    python2.7-dev \
+    pypy-dev
+run apt-get clean && \
+    rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
