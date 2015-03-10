@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Laurynas Tretjakovas "laurynas.tretjakovas@gmail.com"
+MAINTAINER lingya
 
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
